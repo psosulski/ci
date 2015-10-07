@@ -1,0 +1,1 @@
+<?php echo anchor('blog/helper_example','pff') ?>

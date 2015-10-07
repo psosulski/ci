@@ -10,8 +10,8 @@ class Pages extends CI_Controller {
     $data['title'] = $page;
     $this->load->view('templates/header.php',$data);
     $this->load->view('pages/'.$page.'.php',$data);
-    $this->load->view('templates/footer.php',$data);
-
+    $footer = $this->load->view('templates/footer.php',$data,TRUE);
+    echo $footer;
   }
 
 }

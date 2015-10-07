@@ -58,3 +58,25 @@ $route['default_controller'] = 'pages/view';
 
 $route['news/(:any)'] = 'news/view/$1';
 $route['news'] = 'news';
+
+
+
+
+//with request method
+$route['someting']['put'] = '';
+
+/*
+//url with 'journals' => 'blogs'
+$route['journals'] = 'blogs';
+$route['blog/joe'] = 'blogs/users/34';
+//url with product as 1st and anyting as 2nd will be routed to lookup
+$route['product/(:any)'] = 'catalog/product_lookup';
+//A URL with “product” as the first segment, and a number in the second will be remapped to the “catalog” class and the “product_lookup_by_id” method passing in the match as a variable to the method.
+$route['product/(:num)'] = 'catalog/product_lookup_by_id/$1';
+
+//
+$route['products/([a-zA-Z]+)/edit/(\d+)'] = function ($product_type, $id)
+{
+        return 'catalog/product_edit/' . strtolower($product_type) . '/' . $id;
+};
+*/
